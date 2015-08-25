@@ -10,15 +10,34 @@ body{
 	width: 100%;
 	background: #1d292b;
 	text-align: center;
-	margin: 5px;
+	padding: 5px;
 }
 #mainMenu{
 	width: 100%;
 	background: #3c6d77;
+	border-style: none none none none;
+  	border-color: none none #fff none;
 }
 #content{
 	width: 100%;
 	text-align: center;
+}
+.sample{
+	width: 100%;
+	padding: 10px;
+	border-style: none none solid none;
+}
+.sample_img{
+	width: 20%;
+	float: left;
+}
+.sample_name{
+	width: 70%;
+	float: left;
+	padding: 10px;
+	color: #fff;
+	text-align: left;
+	word-wrap:break-word;
 }
 .clearBox{
 	width: 0px;
@@ -31,19 +50,19 @@ body{
 	text-align: center;
 	color: #ff8317;
 }
-.mainMenuBtn a:link {  
+a:link {  
    color: #ff8317;  
    text-decoration: none;  
 }  
-.mainMenuBtn a:visited {  
+a:visited {  
    text-decoration: none;  
    color: #ff8317;  
 }  
-.mainMenuBtn a:hover {  
-   text-decoration: underline;  
+a:hover {  
+   text-decoration: none;  
    color: #ff8317;  
 }  
-.mainMenuBtn a:active {  
+a:active {  
    text-decoration: none;  
    color: #ff8317;  
 }
