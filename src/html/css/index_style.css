@@ -4,29 +4,28 @@ html{
 body{
 	margin: 0px;
 	padding: 0px;
-	overflow: hidden;
 	background: #000;
 	height: 100%;
 	width: 100%;
 	color: #fff;
 }
 #mainMenu{
-	width: 960px;
+	width: 1040px;
 	margin: auto;
 	background: #587acf;
 	/*border-top:2px solid #fff;*/
 	/*border-bottom:2px solid #fff;*/
 }
 #logoImg{
-	width: 960px;
+	width: 1040px;
 	margin: auto;
 	text-align: center;
 	background: #4b5e9b;
 }
 #content{
 	margin: auto;
-	width: 960px;
-	height: 100%;
+	width: 1040px;
+	min-height: 100%;
 	background: #86b3f2;
 }
 #content #aboutme{
@@ -42,6 +41,28 @@ body{
 }
 .btnImg{
 	padding: 5px;
+}
+.imglist{
+	float: left;
+	width: 500px;
+	margin: 10px;
+}
+.imgbox{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.rbutton {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    padding: 0 20px;
+    text-align: center;
+    text-decoration: none;
+    background: #dcca37;
+ 
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
 }
 a {  
    color: #fff;  
