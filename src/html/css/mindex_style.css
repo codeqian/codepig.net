@@ -9,7 +9,7 @@ body{
 	width: 100%;
 	background: #1d292b;
 	text-align: center;
-	padding: 5px;
+	padding:5px 0px;
 }
 #mainMenu{
 	width: 100%;
@@ -38,19 +38,11 @@ body{
 	margin-top: 10px;
 }
 .sample{
-	width: 100%;
 	padding: 10px;
 	border-bottom:2px solid #3c6d77;
 	text-align: center;
 }
-.sample_img{
-	width: 30%;
-	float: left;
-}
 .sample_info{
-	width: 60%;
-	float: left;
-	padding: 10px;
 	color: #fff;
 	text-align: left;
 	word-wrap:break-word;
@@ -69,26 +61,31 @@ body{
 .mainMenuBtn[state="choiced"]{
 	background: #043340;
 }
-a {  
-   color: #043340;  
-   text-decoration: none;  
-}
 .btnImg{
 	margin: 5px;
 	text-align: center;
 }
 .rbutton {
     display: inline-block;
+    margin: 10px 0px;
     position: relative;
-    margin: 10px;
-    padding: 0 20px;
+    /*margin: 10px;*/
+    padding: 0 10px;
     text-align: center;
     text-decoration: none;
     background: #dcca37;
  
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+a {  
+   color: #3c6d77;  
+   text-decoration: none;  
+}
+h3{
+	margin: 0px;
+	padding: 0px;
 }
 ul{
 	margin: 0px;

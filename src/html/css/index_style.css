@@ -7,7 +7,8 @@ body{
 	background: #000;
 	height: 100%;
 	width: 100%;
-	color: #fff;
+	color: #587acf;
+	text-align: center;
 }
 #mainMenu{
 	width: 1040px;
@@ -26,10 +27,12 @@ body{
 	margin: auto;
 	width: 1040px;
 	min-height: 100%;
-	background: #86b3f2;
+	background: #4b5e9b;
 }
 #content #aboutme{
-	padding: 10px;
+	padding: 50px;
+	text-align: left;
+	color: #fff;
 }
 .mainMenuBtn{
 	float: left;
@@ -37,7 +40,7 @@ body{
 	text-align: center;
 }
 .mainMenuBtn[state="choiced"]{
-	background: #dcca37;
+	background: #cebd33;
 }
 .btnImg{
 	padding: 5px;
@@ -51,26 +54,53 @@ body{
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+.sample{
+	padding: 10px;
+	border-bottom:2px solid #587acf;
+	text-align: center;
+}
+.sample_img{
+	width: 30%;
+	float: left;
+}
+.sample_info{
+	width: 60%;
+	float: left;
+	padding: 10px;
+	margin-left: 10px;
+	color: #fff;
+	text-align: left;
+	word-wrap:break-word;
+}
 .rbutton {
     display: inline-block;
     position: relative;
-    margin: 10px;
-    padding: 0 20px;
+    /*margin: 10px;*/
+    padding: 0 10px;
     text-align: center;
     text-decoration: none;
-    background: #dcca37;
+    background: #cebd33;
  
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+.clearBox{
+	width: 0px;
+	height: 0px;
+	clear: both;
 }
 a {  
    color: #fff;  
    text-decoration: none;  
-} 
+}
 a:hover {  
    text-decoration: none;  
-   color: #ffd716; 
+   color: #fff100; 
+}
+h3{
+	margin: 0px;
+	padding: 0px;
 }
 ul{
 	margin: 0px;
@@ -82,11 +112,6 @@ li{
 	margin: 0px;
 	padding: 0px;
 	line-height: 0;
-}
-.clearBox{
-	width: 0px;
-	height: 0px;
-	clear: both;
 }
 img{
 	vertical-align:middle;
