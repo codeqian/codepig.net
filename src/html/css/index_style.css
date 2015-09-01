@@ -60,11 +60,9 @@ body{
 	text-align: center;
 }
 .sample_img{
-	width: 30%;
 	float: left;
 }
 .sample_info{
-	width: 60%;
 	float: left;
 	padding: 10px;
 	margin-left: 10px;
