@@ -53,11 +53,18 @@ body{
 .imgbox{
 	margin-top: 10px;
 	margin-bottom: 10px;
+	border:2px solid #4b5e9b;
 }
 .sample{
 	padding: 10px;
 	border-bottom:2px solid #587acf;
 	text-align: center;
+}
+.samplebox{
+	color: #fff;
+	background: #587acf;
+	padding: 0px 5px 10px 5px;
+	margin:  10px 0px;
 }
 .sample_img{
 	float: left;
@@ -99,6 +106,7 @@ a:hover {
 h3{
 	margin: 0px;
 	padding: 0px;
+	border-bottom:2px solid #4b5e9b;
 }
 ul{
 	margin: 0px;
