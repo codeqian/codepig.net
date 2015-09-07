@@ -1,0 +1,35 @@
+html{
+	height: 100%;
+	min-height: 800px;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	background: #1B1D3F;
+	height: 100%;
+	min-height: 800px;
+	width: 100%;
+	color: #587acf;
+	text-align: center;
+}
+.yellowbox{
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	background: #BA7014;
+}
+.container{
+	height: 100%;
+	min-width: 980px;
+	width: 70%;
+	border-left:10px solid #E89026;
+	border-right:10px solid #E89026;
+	margin: auto;
+	background: #1B1D3F;
+	text-align: center;
+}
+.clearBox{
+	width: 0px;
+	height: 0px;
+	clear: both;
+}
