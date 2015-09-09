@@ -18,6 +18,7 @@ package ui
 		private var pic_loader:Loader = new Loader();
 		private var pic_Mc:MovieClip;
 		private var infoObj:Object;
+		private var printText:String = "";
 		public function showWin() 
 		{
 			this.addChild(titleText);
@@ -33,9 +34,15 @@ package ui
 			btnSwitch(false);
 			linkBtn.addEventListener(MouseEvent.CLICK, linkClick);
 		}
+		public function printAlert(msg:String) {
+			printText += ">" + msg + "\n";
+			textPrint.text = printText;
+		}
 		//更新显示的信息
 		public function upDataInfo(_info:Object) {
 			pic_loader.unload();
+			printAlert("loading...");
+			textPrint.visible = true;
 			infoObj = _info;
 			getPic(infoObj.picUrl);
 			titleText.setText(infoObj.title, "Microsoft YaHei,微软雅黑", 16, 0x1B1D3F,310,32,"left");
@@ -51,7 +58,8 @@ package ui
 			pic_loader.contentLoaderInfo.addEventListener(Event.COMPLETE, loaded_pic);
 		}
 		private function loaded_pic(e:Event):void {
-			this.play();
+			printAlert("complete");
+			textPrint.visible = false;
 		}
 		private function btnSwitch(open:Boolean) {
 			if (open) {

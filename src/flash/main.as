@@ -14,6 +14,7 @@ package
 	import ui.projectBtn;
 	import ui.showWin;
 	import data.xmlClass;
+	import event.mEvent;
 	import fl.transitions.easing.*;
 	/**
 	 * 主文件
@@ -40,7 +41,7 @@ package
 			gear0.stop();
 			gear1.stop();
 			
-			mainMenu = new menu(this);
+			mainMenu = new menu();
 			mainLogo = new logo();
 			win = new showWin();
 			mainLogo.y = 25;
@@ -55,11 +56,18 @@ package
 			stage.align = StageAlign.TOP_LEFT;
             stage.scaleMode = StageScaleMode.NO_SCALE;
 			stage.addEventListener(Event.RESIZE, OnStageResize);
+			mainMenu.addEventListener(mEvent.MAINMENUCLICK, changeChannel);
 			resize();
 			
+			win.printAlert("load xml");
+			xmlClass.initMc(this);
+			xmlClass.loadXml("../data/projectinfo.xml");
 			//test
 		}
-		
+		//接受xmlClass来的信息
+		public function xmlClassCall(msg:String) {
+			trace(msg);
+		}
 		//重置元素位置
 		private function OnStageResize(event:Event) : void
         {
@@ -79,37 +87,56 @@ package
 			mainMenu.x = sWidth / 2 - mainMenu._w / 2;
 			win.x = sWidth / 2 - win.width / 2;
 		}
-		
+		public function changeChannel(e:mEvent) {
+			menuPointer = e._id;
+			hideMenu();
+			gear0.play();
+			gear1.play();
+		}
 		//显示与隐藏按钮
-		private function showMenu(projectInfo:Array) {
-			while (btnSpace.numChildren > 0) {
-				btnSpace.removeChildAt(0);
+		private function showMenu() {
+			showBtn_Tween = new GCSafeTween(btnSpace, "alpha", Regular.easeOut, btnSpace.alpha, 1, 0.5, true);
+			showBtn_Tween.addEventListener(TweenEvent.MOTION_FINISH, showComplete);
+			if (!xmlClass.dataReady) {
+				win.printAlert("no data");
+				return;
 			}
+			var projectInfo:Array = xmlClass.infoList[menuPointer];
+			btnArray = new Array();
 			for (var i:int = 0; i < projectInfo.length; i++) {
 				btnArray[i] = new projectBtn();
+				btnArray[i].buttenMode = true;
 				btnSpace.addChild(btnArray[i]);
+				btnArray[i].addEventListener(MouseEvent.CLICK, projectClick);
 				btnArray[i].x = menuEach * (i % 3);
 				btnArray[i].y = menuEach * int(i / 3);
 			}
-			hideBtn_Tween = new GCSafeTween(btnSpace, "alpha", Regular.easeOut, 0, 1, 0.5, true);
-			showBtn_Tween.addEventListener(TweenEvent.MOTION_FINISH, showComplete);
 		}
 		private function hideMenu() {
-			hideBtn_Tween = new GCSafeTween(btnSpace, "alpha", Regular.easeOut, 1, 0, 0.5, true);
+			hideBtn_Tween = new GCSafeTween(btnSpace, "alpha", Regular.easeOut, btnSpace.alpha, 0, 0.5, true);
 			hideBtn_Tween.addEventListener(TweenEvent.MOTION_FINISH, hideComplete);
 		}
-		private function showComplete() {
+		private function showComplete(e:TweenEvent) {
 			showBtn_Tween.removeEventListener(TweenEvent.MOTION_FINISH, showComplete);
-			//开始加载图片
+			gear0.stop();
+			gear1.stop();
+			for (var i:int = 0; i < btnArray.length; i++) {
+				btnArray[i].getPic(xmlClass.infoList[menuPointer][i].icoUrl);
+			}
 		}
-		private function hideComplete() {
+		private function hideComplete(e:TweenEvent) {
 			hideBtn_Tween.removeEventListener(TweenEvent.MOTION_FINISH, hideComplete);
+			for (var i:int = 0; i < btnArray.length; i++) {
+				btnArray[i].removeEventListener(MouseEvent.CLICK, projectClick);
+				btnSpace.removeChild(btnArray[i]);
+			}
 			while (btnSpace.numChildren > 0) {
 				btnSpace.removeChildAt(0);
 			}
+			showMenu();
 		}
 		//项目按钮点击
-		private function prejectClick(e:MouseEvent) {
+		private function projectClick(e:MouseEvent) {
 			var index:int = btnArray.indexOf(e.target);
 			win.upDataInfo(xmlClass.infoList[menuPointer][index]);
 		}
