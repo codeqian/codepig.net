@@ -22,7 +22,7 @@ package ui
 			pic_loader.contentLoaderInfo.addEventListener(Event.COMPLETE, loaded_pic);
 		}
 		private function loaded_pic(e:Event):void {
-			this.play();
+			this.gotoAndPlay(2);
 		}
 	}
 

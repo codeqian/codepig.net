@@ -27,15 +27,15 @@ package
 		private var win:showWin;//项目详情窗口
 		private var btnArray:Array = new Array();//项目按钮
 		private var btnSpace:Sprite = new Sprite();
-		private var minW:int = 980;//舞台最小尺寸
-		private var minH:int = 800;
-		private var menuX0:int = 15;//项目按钮起始位置
-		private var menuY0:int = 200;
-		private var menuEach:int = 45;
+		private const minW:int = 980;//舞台最小尺寸
+		private const minH:int = 800;
+		private const menuX0:int = 15;//项目按钮起始位置
+		private const menuY0:int = 200;
+		private const menuEach:int = 45;
 		//private var mainTimer:Timer = new Timer(1000, 0);//计时器
-		var showBtn_Tween:GCSafeTween;
-		var hideBtn_Tween:GCSafeTween
-		var menuPointer:int = 0;//菜单类型
+		private var showBtn_Tween:GCSafeTween;
+		private var hideBtn_Tween:GCSafeTween
+		private var menuPointer:int = 0;//菜单类型
 		public function main() 
 		{
 			gear0.stop();
@@ -61,12 +61,12 @@ package
 			
 			win.printAlert("load xml");
 			xmlClass.initMc(this);
-			xmlClass.loadXml("../data/projectinfo.xml");
+			xmlClass.loadXml("data/projectinfo.xml");
 			//test
 		}
-		//接受xmlClass来的信息
+		//接受xmlClass来的消息
 		public function xmlClassCall(msg:String) {
-			trace(msg);
+			win.printAlert(msg);
 		}
 		//重置元素位置
 		private function OnStageResize(event:Event) : void
@@ -105,7 +105,8 @@ package
 			btnArray = new Array();
 			for (var i:int = 0; i < projectInfo.length; i++) {
 				btnArray[i] = new projectBtn();
-				btnArray[i].buttenMode = true;
+				btnArray[i].mouseChildren = false;
+				btnArray[i].buttonMode = true;
 				btnSpace.addChild(btnArray[i]);
 				btnArray[i].addEventListener(MouseEvent.CLICK, projectClick);
 				btnArray[i].x = menuEach * (i % 3);

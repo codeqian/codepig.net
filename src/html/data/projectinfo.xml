@@ -1,4 +1,4 @@
-<data>
+<projectdata rootUrl="">
 	<flashlist>
 		<project>
 			<icoUrl>images/ico/flash/player.jpg</icoUrl>
@@ -60,7 +60,7 @@
 			<icoUrl>images/ico/flash/lz.jpg</icoUrl>
 			<picUrl>images/flash/lz.png</picUrl>
 			<title>双人连珠</title>
-			<info>游戏方式主要为，通过投下弹珠，满足一定排列条件后获得对应的奖励。支持二人在线同屏游戏。</info>
+			<info>游戏中通过投下弹珠，满足一定排列条件后获得对应的奖励。支持二人在线同屏游戏。</info>
 			<link></link>
 		</project>
 		<project>
@@ -72,7 +72,7 @@
 		</project>
 		<project>
 			<icoUrl>images/ico/flash/xc.jpg</icoUrl>
-			<picUrl>images/flash/xc.jpg</picUrl>
+			<picUrl>images/flash/xc.png</picUrl>
 			<title>视频相册</title>
 			<info>在线视频相册的前端编辑页面和展示页面，支持滤镜、过场、皮肤。</info>
 			<link>images/flash/xc.png</link>
@@ -82,9 +82,9 @@
 		<project>
 			<icoUrl>images/ico/android/danceapp.jpg</icoUrl>
 			<picUrl>images/android/danceapp.png</picUrl>
-			<title></title>
-			<info></info>
-			<link></link>
+			<title>播视广场舞 app</title>
+			<info>安卓版广场舞app。主要用于广场舞视频的观看和下载。</info>
+			<link>http://pic.boosj.com/apk/boosjDance.apk</link>
 		</project>
 	</androidlist>
 	<paintinglist>
@@ -236,4 +236,4 @@
 			<link></link>
 		</project>
 	</paintinglist>
-</data>
+</projectdata>

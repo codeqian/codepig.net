@@ -32,16 +32,21 @@ package data
 			dataReady = true;
 			mainMc.xmlClassCall("loaded Xml");
 			dataXML = XML(e.currentTarget.data);
-			trace(dataXML.childNodes("data");
-			trace(dataXML.data.childNodes.length);
-			trace(dataXML.data.childNodes.length());
-			//infoList[0]=dataXML.child("
-			var infoObject:Object = new Object();
-			infoObject.icoUrl = "";
-			infoObject.picUrl = "";
-			infoObject.title = "";
-			infoObject.info = "";
-			infoObject.link = "";
+			var rootUrl:String = dataXML.@rootUrl;
+			var listCount:int = dataXML.children().length();
+			for (var i:int = 0; i < listCount; i++) {
+				infoList[i] = new Array();
+				var projectCount:int = dataXML.child(i).children().length();
+				for (var t:int = 0; t < projectCount; t++) {
+					var infoObject:Object = new Object();
+					infoObject.icoUrl = rootUrl + dataXML.child(i).child(t).child(0);
+					infoObject.picUrl = rootUrl + dataXML.child(i).child(t).child(1);
+					infoObject.title = dataXML.child(i).child(t).child(2);
+					infoObject.info = dataXML.child(i).child(t).child(3);
+					infoObject.link = dataXML.child(i).child(t).child(4);
+					infoList[i][t] = infoObject;
+				}
+			}
 		}
 	}
 

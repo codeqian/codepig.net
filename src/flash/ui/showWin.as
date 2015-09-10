@@ -19,12 +19,13 @@ package ui
 		private var pic_Mc:MovieClip;
 		private var infoObj:Object;
 		private var printText:String = "";
+		private const winSize:Number = 480;
 		public function showWin() 
 		{
 			this.addChild(titleText);
 			this.addChild(infoText);
-			titleText.setText("loading...", "Microsoft YaHei,微软雅黑", 16, 0x1B1D3F,310,32,"left");
-			infoText.setText("loading...", "Microsoft YaHei,微软雅黑", 14, 0x1B1D3F, 310, 64,"left");
+			titleText.setText("", "Microsoft YaHei,微软雅黑", 16, 0x1B1D3F,310,32,"left");
+			infoText.setText("welcome!", "Microsoft YaHei,微软雅黑", 14, 0x1B1D3F, 310, 64,"left");
 			titleText.x = 40;
 			titleText.y = 530;
 			infoText.x = 40;
@@ -33,6 +34,7 @@ package ui
 			pic_Mc.addChild(pic_loader);
 			btnSwitch(false);
 			linkBtn.addEventListener(MouseEvent.CLICK, linkClick);
+			printAlert("不想做画家的UE不是好码农。\n>目前主营flash 开发，目前android app开发学习中……，UE扫盲中……。\n>欢迎欢迎！随便看看吧。");
 		}
 		public function printAlert(msg:String) {
 			printText += ">" + msg + "\n";
@@ -43,9 +45,9 @@ package ui
 			pic_loader.unload();
 			printAlert("loading...");
 			textPrint.visible = true;
-			infoObj = _info;
+			infoObj = _info; 
 			getPic(infoObj.picUrl);
-			titleText.setText(infoObj.title, "Microsoft YaHei,微软雅黑", 16, 0x1B1D3F,310,32,"left");
+			titleText.setText(infoObj.title, "Microsoft YaHei,微软雅黑", 16, 0x1B1D3F, 310, 32, "left");
 			infoText.setText(infoObj.info, "Microsoft YaHei,微软雅黑", 14, 0x1B1D3F, 310, 64, "left");
 			if (infoObj.link == "") {
 				btnSwitch(false);
@@ -60,6 +62,18 @@ package ui
 		private function loaded_pic(e:Event):void {
 			printAlert("complete");
 			textPrint.visible = false;
+			//调整大小
+			if (pic_loader.width > pic_loader.height) {
+				pic_loader.height = winSize * pic_loader.height / pic_loader.width;
+				pic_loader.width = winSize;
+				pic_loader.x = 0;
+				pic_loader.y = winSize / 2 - pic_loader.height / 2;
+			}else {
+				pic_loader.width = winSize * pic_loader.width / pic_loader.height;
+				pic_loader.height = winSize;
+				pic_loader.x = winSize / 2 - pic_loader.width / 2;
+				pic_loader.y = 0;
+			}
 		}
 		private function btnSwitch(open:Boolean) {
 			if (open) {

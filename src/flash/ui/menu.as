@@ -11,8 +11,8 @@ package ui
 	 */
 	public class menu extends MovieClip
 	{
-		public var _w:int = 575;
-		private var PointerX:Array = new Array(142, 229, 315);
+		public const _w:int = 575;
+		private const PointerX:Array = new Array(142, 229, 315);
 		var pointerMove_Tween:GCSafeTween;
 		public function menu() 
 		{
