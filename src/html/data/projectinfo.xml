@@ -84,14 +84,14 @@
 			<picUrl>images/android/danceapp.jpg</picUrl>
 			<title>播视广场舞 app</title>
 			<info>安卓版广场舞app。主要用于广场舞视频的观看和下载。</info>
-			<link>http://pic.boosj.com/apk/boosjDance.apk</link>
+			<link>http://www.boosj.com/download/download.html</link>
 		</project>
 		<project>
 			<icoUrl>images/ico/android/pwnapp.jpg</icoUrl>
 			<picUrl>images/android/pwnapp.jpg</picUrl>
 			<title>密本</title>
 			<info>安卓版密码管理工具。主要以笔记的形式记录各种密码并加密保存。</info>
-			<link>http://www.codepig.net/apk/app-release.apk</link>
+			<link>http://www.wandoujia.com/apps/codepig.passnote</link>
 		</project>
 	</androidlist>
 	<paintinglist>
