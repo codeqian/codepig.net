@@ -1,0 +1,65 @@
+/*移出*/
+.moveoutclass
+{
+animation:moveout 1s;
+-moz-animation:moveout 1s; /* Firefox */
+-webkit-animation:moveout 1s; /* Safari and Chrome */
+-o-animation:moveout 1s; /* Opera */
+}
+
+@keyframes moveout
+{
+0%   {left:0px;}
+100% {left:-100%;}
+}
+
+@-moz-keyframes moveout /* Firefox */
+{
+0%   {left:0px;}
+100% {left:-100%;}
+}
+
+@-webkit-keyframes moveout /* Safari and Chrome */
+{
+0%   {left:0px;}
+100% {left:-100%;}
+}
+
+@-o-keyframes moveout /* Opera */
+{
+0%   {left:0px;}
+100% {left:-100%;}
+}
+
+/*移入*/
+.moveinclass
+{
+animation:movein 1s;
+-moz-animation:movein 1s; /* Firefox */
+-webkit-animation:movein 1s; /* Safari and Chrome */
+-o-animation:movein 1s; /* Opera */
+}
+
+@keyframes movein
+{
+0%   {left:100%;}
+100% {left:0px;}
+}
+
+@-moz-keyframes movein /* Firefox */
+{
+0%   {left:100%;}
+100% {left:0px;}
+}
+
+@-webkit-keyframes movein /* Safari and Chrome */
+{
+0%   {left:100%;}
+100% {left:0px;}
+}
+
+@-o-keyframes movein /* Opera */
+{
+0%   {left:100%;}
+100% {left:0px;}
+}

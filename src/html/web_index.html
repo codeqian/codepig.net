@@ -4,6 +4,7 @@
 		<title>codepig</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="css/windex_style.css" />
+		<link rel="stylesheet" type="text/css" href="css/animation.css" />
 		<script src="js/jquery-1.11.3.min.js"></script>
 		<script src="js/webindex.js"></script>
 	</head>
@@ -15,10 +16,10 @@
 			<a href="web_index.html"><img src="images/logo_index.png" class="btnImg"></a>
 		</div>
 		<div id="mainMenu">
-			<div class="mainMenuBtn" state="no" onclick="changePage(1)"><img src="images/flash_ico_w.png" alt="flash" class="btnImg">FLASH</div>
-			<div class="mainMenuBtn" state="no" onclick="changePage(2)"><img src="images/android_ico_w.png" alt="android" class="btnImg">ANDROID</div>
-			<div class="mainMenuBtn" state="no" onclick="changePage(3)"><img src="images/painting_ico_w.png" alt="painting" class="btnImg">PAINTING</div>
-			<div class="mainMenuBtn" state="no" onclick="changePage(4)"><img src="images/me_ico_w.png" alt="about me" class="btnImg">ABOUT ME</div>
+			<div id="flashBtn" class="mainMenuBtn"><img src="images/flash_ico_w.png" alt="flash" class="btnImg">FLASH</div>
+			<div id="androidBtn" class="mainMenuBtn"><img src="images/android_ico_w.png" alt="android" class="btnImg">ANDROID</div>
+			<div id="paintingBtn" class="mainMenuBtn"><img src="images/painting_ico_w.png" alt="painting" class="btnImg">PAINTING</div>
+			<div id="aboutBtn" class="mainMenuBtn"><img src="images/me_ico_w.png" alt="about me" class="btnImg">ABOUT ME</div>
 			<div class="clearBox"></div>
 		</div>
 		<div id="content">
@@ -94,7 +95,6 @@
 					</div>
 				</div>
 				<div class="clearBox"></div>
-			-end-
 			</div>
 			<div id="page2" class="contentPage">
 				<div class="sample">
@@ -113,7 +113,7 @@
 					<a href="http://www.wandoujia.com/apps/codepig.passnote" class="rbutton">DOWNLOAD APK</a></div>
 					<div class="clearBox"></div>
 				</div>
-				-end-
+				<div class="clearBox"></div>
 			</div>
 			<div id="page3" class="contentPage">
 				<div class="imglist">
@@ -142,7 +142,6 @@
 					<img class="imgbox" src="images/painting/21.jpg">
 				</div>
 				<div class="clearBox"></div>
-				-end-
 			</div>
 			<div id="page4" class="contentPage">
 				<div id="aboutme">

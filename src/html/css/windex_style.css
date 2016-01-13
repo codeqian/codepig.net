@@ -20,11 +20,12 @@ body{
 	display: none;
 }
 #logoImgBig{
+	display: none;
 	padding: 100px 0px 100px 0px;
 }
 #content{
 	display:none;
-	margin: auto;
+	position: relative;
 	width: 100%;
 	text-align: center;
 }
@@ -32,18 +33,6 @@ body{
 	padding: 50px;
 	text-align: left;
 	color: #fff;
-}
-#page1{
-	display: none;
-}
-#page2{
-	display: none;
-}
-#page3{
-	display: none;
-}
-#page4{
-	display: none;
 }
 .logoImg{
 	width: 100%;
@@ -59,8 +48,8 @@ body{
 	padding: 5px 0px;
 	text-align: center;
 }
-.mainMenuBtn[state="choiced"]{
-	background: #cebd33;
+.mainMenuBtnchoiced{
+	background: #3a4f92;
 }
 .btnImg{
 	padding: 5px;
@@ -76,8 +65,9 @@ body{
 	border:2px solid #3a4f92;
 }
 .sample{
+	float: left;
 	padding: 10px;
-	border-bottom:2px solid #4462ad;
+	/*border-bottom:2px solid #4462ad;*/
 	text-align: center;
 }
 .samplebox{
@@ -112,10 +102,10 @@ body{
 }
 .contentPage{
 	width: 100%;
-	position: relative;
+	top: 0px;
 	display: block;
 	margin: auto;
-	float: left;
+	position: absolute;
 	text-align: center;
 }
 .clearBox{
