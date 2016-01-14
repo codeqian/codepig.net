@@ -2,6 +2,7 @@ html{
 	height: 100%;
 }
 body{
+	display: none;
 	margin: 0px;
 	padding: 0px;
 	background: #3a4f92;
@@ -11,7 +12,7 @@ body{
 	text-align: center;
 }
 #mainMenu{
-	display:none;
+	/*display:none;*/
 	width: 100%;
 	margin: auto;
 	background: #2d407c;
@@ -20,14 +21,13 @@ body{
 	display: none;
 }
 #logoImgBig{
-	display: none;
+	/*display: none;*/
 	padding: 100px 0px 100px 0px;
 }
 #content{
-	display:none;
+	/*display:none;*/
 	position: relative;
 	width: 100%;
-	text-align: center;
 }
 #content #aboutme{
 	padding: 50px;
@@ -47,6 +47,7 @@ body{
 	width: 25%;
 	padding: 5px 0px;
 	text-align: center;
+	color: white;
 }
 .mainMenuBtnchoiced{
 	background: #3a4f92;
@@ -54,14 +55,16 @@ body{
 .btnImg{
 	padding: 5px;
 }
-.imglist{
-	float: left;
-	width: 500px;
-	margin: 10px;
-}
 .imgbox{
+	margin: auto;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	border:2px solid #3a4f92;
+}
+.imgsample{
+	height: 300px;
+	/*float: left;*/
+	margin: 10px;
 	border:2px solid #3a4f92;
 }
 .sample{
@@ -71,10 +74,15 @@ body{
 	text-align: center;
 }
 .samplebox{
+	float: left;
+	word-wrap: break-word;
+	word-break: normal;
+	width: 490px;
+	height: 500px;
 	color: #fff;
 	background: #4462ad;
 	padding: 0px 5px 10px 5px;
-	margin:  10px 0px;
+	margin:  10px;
 }
 .sample_img{
 	float: left;
@@ -106,7 +114,6 @@ body{
 	display: block;
 	margin: auto;
 	position: absolute;
-	text-align: center;
 }
 .clearBox{
 	width: 0px;
