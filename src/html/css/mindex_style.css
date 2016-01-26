@@ -1,5 +1,6 @@
 /*移动端页面样式*/
 body{
+	display: none;
 	margin: 0px;
 	padding: 0px;
 	background: #043340;
@@ -26,6 +27,7 @@ body{
 #content{
 	width: 100%;
 	text-align: center;
+	position: relative;
 	min-height: 100%;
 	color: #3c6d77;
 }
@@ -53,13 +55,21 @@ body{
 	height: 0px;
 	clear: both;
 }
+.contentPage{
+	width: 100%;
+	top: 0px;
+	display: block;
+	margin: auto;
+	position: absolute;
+}
 .mainMenuBtn{
+	cursor: pointer;
 	float: left;
 	width: 25%;
 	text-align: center;
 	color: #ff8317;
 }
-.mainMenuBtn[state="choiced"]{
+.mainMenuBtnchoiced{
 	background: #043340;
 }
 .btnImg{

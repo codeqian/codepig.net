@@ -36,7 +36,7 @@ $(document).ready(function(){
 						break;
 					case 2:
 						$("#androidBtn").removeClass("mainMenuBtnchoiced");
-						$("#page2").removeClass("moveinclass");;
+						$("#page2").removeClass("moveinclass");
 						animPage=$("#page2");
 						animPage.addClass("moveoutclass");
 						animPage.on("animationend webkitAnimationEnd oAnimationEnd", animationListener);

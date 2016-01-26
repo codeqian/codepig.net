@@ -5,20 +5,166 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, maximum-scale=2.0, minimum-scale=2.0, user-scalable=no">
 		<link rel="stylesheet" type="text/css" href="css/mindex_style.css" />
+		<link rel="stylesheet" type="text/css" href="css/animation.css" />
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/mindex.js"></script>
 	</head>
 	<body>
 		<div id="logoImg">
 			<img src="images/logo.png" width="150px" height="35px">
 		</div>
-		<div id="homeMenu">
-		WELCOME！<br/>
-			<img src="images/code1.png" width="21px" height="35">
-			<a href="mflash.html"><img src="images/flash_ico.png" alt="flash" class="btnImg" width="50px" height="60px"></a>
-			<a href="mandroid.html"><img src="images/android_ico.png" alt="android" class="btnImg" width="50px" height="60px"></a>
-			<a href="mpainting.html"><img src="images/painting_ico.png" alt="painting" class="btnImg" width="50px" height="60px"></a>
-			<a href="mabout.html"><img src="images/me_ico.png" alt="about me" class="btnImg" width="50px" height="60px"></a>
-			<img src="images/code2.png" width="37px" height="35"><br/>
-			<h4>我的个人站，主要写了我做过什么以及怎么找到我。<br/>其实没什么干货，聊胜于无罢了。<br/>当然，很欢迎您的到来,随便看看吧！</h4>
+		<div id="mainMenu">
+			<ul>
+				<li id="flashBtn" class="mainMenuBtn"><img src="images/flash_ico.png" alt="flash" class="btnImg" width="50px" height="60px"></li>
+				<li id="androidBtn" class="mainMenuBtn"><img src="images/android_ico.png" alt="android" class="btnImg" width="50px" height="60px"></li>
+				<li id="paintingBtn" class="mainMenuBtn"><img src="images/painting_ico.png" alt="painting" class="btnImg" width="50px" height="60px"></li>
+				<li id="aboutBtn" class="mainMenuBtn"><img src="images/me_ico.png" alt="about me" class="btnImg" width="50px" height="60px"></li>
+			</ul>
+			<div class="clearBox"></div>
+		</div>
+		<div id="content">
+			<div id="page0" class="contentPage">
+				<h4>我的个人站，主要写了我做过什么以及怎么找到我。<br/>其实没什么干货，聊胜于无罢了。<br/>当然，很欢迎您的到来,随便看看吧！</h4>
+				</div>
+			<div id="page1" class="contentPage">
+				<div class="sample">
+					<div class="sample_info">
+						<h3>flash视频播放器</h3>
+						播视网pc端视频播放器。提供基本播放设置功能，支持广告插件，支持p2p。<br/>
+					</div>
+					<img class="imgbox" src="images/flash/player.jpg">
+					<a href="http://www.boosj.com" class="rbutton">LINK</a>
+				</div>
+				<div class="sample">
+					<div class="sample_info">
+						<h3>牛牛</h3>
+						扑克类游戏“牛牛”，支持托管、游戏内公告、聊天。<br/>
+					</div>
+					<img class="imgbox" src="images/flash/nn.jpg">
+					<a href="http://9.zjdb.cn/nn/v1/" class="rbutton">LINK</a>
+				</div>
+				<div class="sample">
+					<div class="sample_info">
+						<h3>快乐遛狗</h3>
+						赛马类游戏，主要游戏方式为竞猜获胜狗编号。也支持狗狗冠名。<br/>
+					</div>
+					<img class="imgbox" src="images/flash/lg.jpg">
+					<a href="http://9.zjdb.cn/dog/" class="rbutton">LINK</a>
+				</div>
+				<div class="sample">
+					<div class="sample_info">
+						<h3>五子棋</h3>
+						棋类游戏“五子棋”。<br/>
+					</div>
+					<img class="imgbox" src="images/flash/wzq.jpg">
+					<a href="http://9.zjdb.cn/wzq/" class="rbutton">LINK</a>
+				</div>
+				<div class="sample">
+					<div class="sample_info">
+						<h3>幸运葫芦番</h3>
+						扑克类游戏“葫芦番”。<br/>
+					</div>
+					<img class="imgbox" src="images/flash/hlf.jpg">
+					<a href="http://9.zjdb.cn/pj/" class="rbutton">LINK</a>
+				</div>
+				<div class="sample">
+					<div class="sample_info">
+						<h3>森林狩猎</h3>
+						竞猜类游戏，四周的图案旋转到用户选定的图案就算赢。<br/>
+					</div>
+					<img class="imgbox" src="images/flash/sl.jpg">
+					<a href="http://9.zjdb.cn/Hunting/" class="rbutton">LINK</a>
+				</div>
+				<div class="sample">
+					<div class="sample_info">
+						<h3>二人麻将</h3>
+						“二人麻将”游戏，支持托管、游戏内公告、聊天。<br/>
+					</div>
+					<img class="imgbox" src="images/flash/mj.jpg">
+					<a href="http://9.zjdb.cn/mj/" class="rbutton">LINK</a>
+				</div>
+				<div class="sample">
+					<div class="sample_info">
+						<h3>双人连珠</h3>
+						游戏方式主要为，通过投下弹珠，满足一定排列条件后获得对应的奖励。支持二人在线同屏游戏。<br/>
+					</div>
+					<img class="imgbox" src="images/flash/lz.jpg">
+				</div>
+				<div class="sample">
+					<div class="sample_info">
+						<h3>山寨飞车</h3>
+						大转盘类游戏，增加了车辆选择和改装以增加游戏性。有丰富的动画效果。<br/>
+					</div>
+					<img class="imgbox" src="images/flash/fc.jpg">
+				</div>
+				<div class="sample">
+					<div class="sample_info">
+						<h3>德州扑克</h3>
+						扑克类游戏“德州扑克”，支持托管、游戏内公告、聊天。<br/>
+					</div>
+					<img class="imgbox" src="images/flash/dz.jpg">
+				</div>
+				<div class="sample">
+					<div class="sample_info">
+						<h3>视频相册</h3>
+						在线视频相册的前端编辑页面和展示页面，支持滤镜、过场、皮肤。<br/>
+					</div>
+					<img class="imgbox" src="images/flash/xc.jpg">
+				</div>
+				</div>
+			<div id="page2" class="contentPage">
+				<div class="sample">
+					<div class="sample_info">
+						<h3>播视广场舞 app</h3>
+						安卓版广场舞app。主要用于广场舞视频的观看和下载。<br/>
+					</div>
+					<img class="imgbox" src="images/android/danceapp.jpg">
+					<a href="http://www.boosj.com/download/download.html" class="rbutton">DOWNLOAD APK</a>
+				</div>
+				<div class="sample">
+					<div class="sample_info">
+						<h3>密本</h3>
+						安卓版密码管理工具。主要以笔记的形式记录各种密码并加密保存。<br/>
+					</div>
+					<img class="imgbox" src="images/android/pwnapp.jpg">
+					<a href="http://www.wandoujia.com/apps/codepig.passnote" class="rbutton">DOWNLOAD APK</a>
+				</div>
+				</div>
+			<div id="page3" class="contentPage">
+				<img class="imgbox" src="images/painting/1.jpg">
+				<img class="imgbox" src="images/painting/2.jpg">
+				<img class="imgbox" src="images/painting/3.jpg">
+				<img class="imgbox" src="images/painting/4.jpg">
+				<img class="imgbox" src="images/painting/5.jpg">
+				<img class="imgbox" src="images/painting/6.jpg">
+				<img class="imgbox" src="images/painting/7.jpg">
+				<img class="imgbox" src="images/painting/8.jpg">
+				<img class="imgbox" src="images/painting/9.jpg">
+				<img class="imgbox" src="images/painting/10.jpg">
+				<img class="imgbox" src="images/painting/11.jpg">
+				<img class="imgbox" src="images/painting/12.jpg">
+				<img class="imgbox" src="images/painting/13.jpg">
+				<img class="imgbox" src="images/painting/14.jpg">
+				<img class="imgbox" src="images/painting/15.jpg">
+				<img class="imgbox" src="images/painting/16.jpg">
+				<img class="imgbox" src="images/painting/17.jpg">
+				<img class="imgbox" src="images/painting/18.jpg">
+				<img class="imgbox" src="images/painting/19.jpg">
+				<img class="imgbox" src="images/painting/20.jpg">
+				<img class="imgbox" src="images/painting/21.jpg">
+				</div>
+			<div id="page4" class="contentPage">
+				<br/>
+				不想做画家的UE不是好码农。<br/>
+				早先做过物理老师、平面设计、美工、网页设计、手绘动画等等杂活。<br/>
+				后来投身flash事业。起先画过flash动画，做过flash课件。最后自08年始借着制作flash小游戏的工作成为一个专职flash as开发的码农。<br/>
+				话说技多不压身，15年初开始学习Android app开发至今。<br/>
+				出于对UE的个人兴趣，目前也在这方面进行扫盲中。<br/>
+				欢迎各位不吝赐教。<br/><br/>
+				<img src="images/qq.png" width="25px" height="25px">  QQ:15051607<br/>
+				<img src="images/email.png" width="25px" height="18px">  EMAIL:qzdszz@163.com<br/>
+				<img src="images/github.png" width="25px" height="22px"><a href="https://github.com/codeqian">  GITHUB:https://github.com/codeqian</a>
+				</div>
 		</div>
 	</body>
 </html>

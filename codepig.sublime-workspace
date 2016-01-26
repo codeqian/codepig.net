@@ -235,7 +235,7 @@
 			"file": "src/html/css/windex_style.css",
 			"settings":
 			{
-				"buffer_size": 1941,
+				"buffer_size": 2077,
 				"line_ending": "Windows"
 			}
 		},
@@ -251,7 +251,7 @@
 			"file": "src/html/web_index.html",
 			"settings":
 			{
-				"buffer_size": 6552,
+				"buffer_size": 6384,
 				"line_ending": "Windows"
 			}
 		},
@@ -267,7 +267,7 @@
 			"file": "src/html/js/webindex.js",
 			"settings":
 			{
-				"buffer_size": 2115,
+				"buffer_size": 2657,
 				"line_ending": "Windows"
 			}
 		}
@@ -459,15 +459,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1941,
+						"buffer_size": 2077,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								786,
-								786
+								0,
+								0
 							]
 						],
 						"settings":
@@ -479,7 +479,7 @@
 						"translation.y": 657.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -522,15 +522,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6552,
+						"buffer_size": 6384,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5207,
-								5207
+								0,
+								0
 							]
 						],
 						"settings":
@@ -580,26 +580,26 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2115,
+						"buffer_size": 2657,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								638,
-								638
+								413,
+								413
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
-						"translation.x": 0.0,
+						"translation.x": -0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -681,7 +681,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
