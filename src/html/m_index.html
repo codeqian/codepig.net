@@ -6,7 +6,17 @@
 		<meta name="viewport" content="width=device-width, maximum-scale=2.0, minimum-scale=2.0, user-scalable=no">
 		<link rel="stylesheet" type="text/css" href="css/mindex_style.css" />
 		<link rel="stylesheet" type="text/css" href="css/animation.css" />
-		<script src="js/jquery-1.11.3.min.js"></script>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css" />
+		<script src="js/jquery.min.js"></script>
+		<!--这部分必须加在加载jquery.mobile之前，不加就会在chrome下出错。-->
+		<script>
+			$(document).bind('mobileinit',function(){
+				$.mobile.changePage.defaults.changeHash = false;
+				$.mobile.hashListeningEnabled = false;
+				$.mobile.pushStateEnabled = false;
+			});
+		</script>
+		<script src="js/jquery.mobile.min.js"></script>
 		<script src="js/mindex.js"></script>
 	</head>
 	<body>
@@ -23,10 +33,10 @@
 			<div class="clearBox"></div>
 		</div>
 		<div id="content">
-			<div id="page0" class="contentPage">
+			<div data-role="page" id="page0" class="contentPage">
 				<h4>我的个人站，主要写了我做过什么以及怎么找到我。<br/>其实没什么干货，聊胜于无罢了。<br/>当然，很欢迎您的到来,随便看看吧！</h4>
 				</div>
-			<div id="page1" class="contentPage">
+			<div data-role="page" id="page1" class="contentPage">
 				<div class="sample">
 					<div class="sample_info">
 						<h3>flash视频播放器</h3>
@@ -112,7 +122,7 @@
 					<img class="imgbox" src="images/flash/xc.jpg">
 				</div>
 				</div>
-			<div id="page2" class="contentPage">
+			<div data-role="page" id="page2" class="contentPage">
 				<div class="sample">
 					<div class="sample_info">
 						<h3>播视广场舞 app</h3>
@@ -130,7 +140,7 @@
 					<a href="http://www.wandoujia.com/apps/codepig.passnote" class="rbutton">DOWNLOAD APK</a>
 				</div>
 				</div>
-			<div id="page3" class="contentPage">
+			<div data-role="page" id="page3" class="contentPage">
 				<img class="imgbox" src="images/painting/1.jpg">
 				<img class="imgbox" src="images/painting/2.jpg">
 				<img class="imgbox" src="images/painting/3.jpg">
@@ -153,7 +163,7 @@
 				<img class="imgbox" src="images/painting/20.jpg">
 				<img class="imgbox" src="images/painting/21.jpg">
 				</div>
-			<div id="page4" class="contentPage">
+			<div data-role="page" id="page4" class="contentPage">
 				<br/>
 				不想做画家的UE不是好码农。<br/>
 				早先做过物理老师、平面设计、美工、网页设计、手绘动画等等杂活。<br/>
