@@ -4,11 +4,11 @@
 		<title>codepig.net</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<style type="text/css" media="screen">
-		html, body { 
+		html, body {
 			height:100%;
 			text-align: center;
 		}
-		body { 
+		body {
 			margin:0;
 			padding:0;
 			overflow:hidden;
@@ -19,6 +19,20 @@
 		}
 		#btnMenu{
 			margin-top: 50px;
+		}
+		#lab{
+			position:absolute;
+			bottom: 0px;
+			font
+		}
+		#lab a{
+			text-decoration:none
+		}
+		#lab a:link{
+			color:#00A06A
+		}
+		#lab a:hover{
+			color:#ffffff
 		}
 		.imgBtn{
 			margin: 10px;
@@ -38,7 +52,7 @@
 				}()
 			}
 			if(mbrowser.versions.pad == true ){}
-			else if(mbrowser.versions.mobile == true || mbrowser.versions.android == true || mbrowser.versions.mobileHD == true){	
+			else if(mbrowser.versions.mobile == true || mbrowser.versions.android == true || mbrowser.versions.mobileHD == true){
 				window.location.href="m_index.html";
 			}
 		</script>
@@ -52,6 +66,9 @@
 			<a class="imgBtn" href="flash_index.html"><img src="images/adobe_flash.png"></a>
 			<a class="imgBtn" href="web_index.html"><img src="images/html.png"></a>
 		</div>
+	</div>
+	<div id="lab">
+		<a class="imgBtn" href="lab/index.html"><img src="images/labicon.png">LAB</a>
 	</div>
 	</body>
 </html>

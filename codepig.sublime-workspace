@@ -251,23 +251,15 @@
 			"file": "src/html/web_index.html",
 			"settings":
 			{
-				"buffer_size": 6384,
+				"buffer_size": 6326,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/F/Git/H5-videoPlayer/src/player.html",
+			"file": "src/html/index.html",
 			"settings":
 			{
-				"buffer_size": 2305,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/html/js/webindex.js",
-			"settings":
-			{
-				"buffer_size": 2657,
+				"buffer_size": 1783,
 				"line_ending": "Windows"
 			}
 		}
@@ -319,6 +311,9 @@
 	],
 	"file_history":
 	[
+		"/F/Git/H5-videoPlayer/src/player.html",
+		"/F/Git/codepig.net/src/html/js/webindex.js",
+		"/F/qzd android/test.html",
 		"/F/Git/H5-videoPlayer/src/js/videoplayer.js",
 		"/F/Git/H5-videoPlayer/src/css/playerstyle.css",
 		"/F/Git/codepig.net/src/html/m_index.html",
@@ -327,7 +322,6 @@
 		"/F/Git/codepig.net/src/html/web_painting.html",
 		"/F/Git/codepig.net/src/html/web_android.html",
 		"/F/Git/codepig.net/src/html/web_about.html",
-		"/F/Git/H5-videoPlayer/src/player.html",
 		"/F/Git/codepig.net/src/html/css/index_style.css",
 		"/F/Git/codepig.net/src/html/index.html",
 		"/F/Git/codepig.net/src/html/css/mindex_style.css",
@@ -466,8 +460,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								1030,
+								1030
 							]
 						],
 						"settings":
@@ -479,7 +473,7 @@
 						"translation.y": 657.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -513,7 +507,7 @@
 			]
 		},
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -522,15 +516,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6384,
+						"buffer_size": 6326,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								6250,
+								6250
 							]
 						],
 						"settings":
@@ -539,63 +533,35 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1319.0,
+						"translation.y": 1649.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "/F/Git/H5-videoPlayer/src/player.html",
+					"file": "src/html/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2305,
+						"buffer_size": 1783,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1583,
-								1583
+								620,
+								620
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/html/js/webindex.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2657,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								413,
-								413
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": -0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
